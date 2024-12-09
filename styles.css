@@ -1,0 +1,250 @@
+/* styles.css */
+
+/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Animasi untuk elemen */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Daftar Produk */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: scale(0.95);
+    opacity: 0;
+    animation: fadeInScale 1s ease forwards; /* Efek animasi produk muncul */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.product img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Efek zoom pada tombol saat hover */
+}
+
+/* Animasi produk muncul */
+@keyframes fadeInScale {
+    0% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Halaman Pesanan */
+.order-details {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Contoh CSS untuk gambar produk */
+.product img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Contoh CSS untuk gambar terima kasih */
+header img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Styling untuk setiap produk */
+.product {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.product button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product button:hover {
+    background-color: #45a049;
+}
+
+/* Styling untuk halaman utama */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling untuk intro section */
+.intro {
+    text-align: center;
+    margin: 40px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.intro .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.intro .btn:hover {
+    background-color: #45a049;
+}
+
+/* Styling untuk produk unggulan */
+.featured-products .product-preview {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    text-align: center;
+    margin: 20px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling untuk produk di halaman produk */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    text-align: center;
+    margin: 20px;
+    width: 250px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling tombol */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Efek zoom pada tombol saat hover */
+}

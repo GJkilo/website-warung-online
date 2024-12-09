@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Kami</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .product-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .rating {
+            color: #f39c12;
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        .buyers {
+            color: #555;
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Daftar Menu Masakan Kami</h1>
+        <nav>
+            <ul>
+                <li><a href="index.php">Beranda</a></li>
+                <li><a href="produk.php">Menu Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temukan Menu Terbaik Kamu</h2>
+        <div class="product-list">
+            <!-- Nasi Goreng -->
+            <div class="product-item">
+                <img src="https://asset.kompas.com/crops/U6YxhTLF-vrjgM8PN3RYTHlIxfM=/84x60:882x592/1200x800/data/photo/2021/11/17/61949959e07d3.jpg" alt="Nasi Goreng" width="200">
+                <a href="deskripsi_produk.php?product=nasi_goreng" style="text-decoration: none; color: inherit;">
+                    <h3>Nasi Goreng</h3>
+                    <p>Harga: Rp 10.000</p>
+                </a>
+                <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+                <div class="buyers">Jumlah Pembeli: 120 orang</div>
+            </div>
+
+            <!-- Mie Goreng -->
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_ZKLgQKQvuPXMAoCh50vEkCgwIPMhpLdAA&s" alt="Mie Goreng" width="200">
+                <a href="deskripsi_produk.php?product=mie_goreng" style="text-decoration: none; color: inherit;">
+                    <h3>Mie Goreng</h3>
+                    <p>Harga: Rp 15.000</p>
+                </a>
+                <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                <div class="buyers">Jumlah Pembeli: 200 orang</div>
+            </div>
+
+            <!-- Kwetiaw Goreng/Rebus -->
+            <div class="product-item">
+                <img src="https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/08/07032610/Praktis-dan-Enak-Ini-Resep-Kwetiau-Goreng-Telur-yang-Lezat-.jpg.webp" alt="Kwetiaw Goreng/Rebus" width="200">
+                <a href="deskripsi_produk.php?product=kwetiaw_goreng_rebus" style="text-decoration: none; color: inherit;">
+                    <h3>Kwetiaw Goreng/Rebus</h3>
+                    <p>Harga: Rp 15.000</p>
+                </a>
+                <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+                <div class="buyers">Jumlah Pembeli: 180 orang</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Warung Online. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
